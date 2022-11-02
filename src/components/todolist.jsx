@@ -5,12 +5,14 @@ import Todo from "./todo";
 import TodoModel from "./utils/Todo.model";
 
 const AllTodos = () => {
+
   const todos = sampleTodos.map((currentTodo) => {
     const todo = new TodoModel(
       currentTodo.todoDescription,
       currentTodo.todoDateCreated,
       currentTodo.todoCompleted,
       currentTodo._id
+
     );
     return <Todo todo={todo} key={todo._id} />;
   });

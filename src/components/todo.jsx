@@ -3,9 +3,11 @@ import PropTypes from "prop-types";
 import TodoModel from "./utils/Todo.model";
 
 const Todo = ({ todo }) => {
+
   const dateCreated = new Date(Date.parse(todo.todoDateCreated)).toUTCString();
   const completedClassName = todo.todoCompleted ? `completed` : ``;
   let completed;
+
 
   if (todo.todoCompleted) {
     completed = `N/A`;
