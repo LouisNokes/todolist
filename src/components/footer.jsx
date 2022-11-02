@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 
-export const Footer = () => {
-    return (
-        <footer className="mt-auto py-3 text-center container">
-            <p>
-                &copy; QA Ltd 2019-
-            </p>
-        </footer>
-    )
-}
+const Footer = () => {
+  return (
+    <footer className="mt-auto py-3 container text-center">
+      &copy; QA Ltd 2019-
+    </footer>
+  );
+};
+
+export default Footer;
